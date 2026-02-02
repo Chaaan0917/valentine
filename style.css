@@ -42,18 +42,17 @@ button {
 #yesBtn {
     background-color: #ff4d6d;
     color: white;
-    z-index: 999; /* yes button always on top */
-    position: relative; /* needed if you want z-index to work properly */
+    z-index: 999; 
+    position: relative;
 }
 
 #noBtn {
     background-color: #cccccc;
-    z-index: 1; /* behind yes button */
-    position: fixed; /* keep it fixed when moving */
+    z-index: 1; 
+    position: fixed; 
 }
 
 
-/* ================== NEW STYLES FOR SIDE GIFS ================== */
 
 .side-gif {
     width: 150px; 
@@ -72,3 +71,4 @@ button {
 .right-gif {
     right: -100px; 
 }
+
