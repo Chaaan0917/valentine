@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ffe6eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative; 
+}
+
+.valentine-gif {
+    width: 300px;
+    max-width: 90%;
+    margin-bottom: 20px;
+    z-index: 1; 
+}
+
+h1 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    position: relative;
+    height: 60px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+    z-index: 999; /* yes button always on top */
+    position: relative; /* needed if you want z-index to work properly */
+}
+
+#noBtn {
+    background-color: #cccccc;
+    z-index: 1; /* behind yes button */
+    position: fixed; /* keep it fixed when moving */
+}
+
+
+/* ================== NEW STYLES FOR SIDE GIFS ================== */
+
+.side-gif {
+    width: 150px; 
+    max-width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.left-gif {
+    left: -100px; 
+}
+
+.right-gif {
+    right: -100px; 
+}
